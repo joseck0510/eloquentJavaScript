@@ -23,6 +23,12 @@ describe("ChessBoard", function() {
     expect(chessboard.isCounterEven(2)).toEqual(true);
   });
 
+  it("should generate an 8x8 grid, if passed an argument of 8", function () {
+    expect(chessboard.generateBoard()).toEqual("\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n");
+  });
 
+  it("should generate an 2x2 grid, if passed an argument of 2", function () {
+    expect(chessboard.generateBoard()).toEqual("\n# # \n # #\n");
+  });
 
 });
